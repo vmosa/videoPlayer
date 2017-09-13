@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Base HTML file-->
 <html ng-app="videoApp">
 <head>
 	<meta charset="UTF-8">
@@ -9,12 +10,10 @@
 	
 </head>
 <body ng-controller="mainController" class="videolist">
-	<h2>Crossover Video Portal</h2>
+	<h2>Video Player</h2>
 	<login-form></login-form>
 	<video-list id="vidList"></video-list>
-	<div ng-hide>
-<!--	<div style="background-color:grey; display:inline-block;height: 200px;width=40%" ng-view></div>
--->	
+	
 <script src="app.js"></script>
 <script src="mainController.js"></script>
 <script src="loginForm.js"></script>
