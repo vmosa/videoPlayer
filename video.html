@@ -1,0 +1,27 @@
+<div style="display: inline-block; min-width:260px; max-width:260px; margin-left:5px; margin-right:5px; background-color:#EEDDEE; padding-left:5px; border-radius:15px">
+<table>
+<tr> 
+<h3 style="word-break: keep-all; height:40px;" ng-click="titleClick()">
+{{$ctrl.vid.name}}
+</h3>
+</tr>
+<br/>
+<tr>
+<video ng-src="{{source=$ctrl.vid.url}}" height="150px" width="250px" controls>
+Your browser does not support the video tag.
+</video>
+<br/>
+</tr>
+<tr>
+<p style="font-size: 14"> Overall rating: {{" "+avgRate($ctrl.vid.ratings)}}</p>
+</br>
+<stars></stars>
+</tr>
+<tr>
+<p style="word-break: keep-all;min-height:80px; max-height:80px; overflow:hidden; text-overflow:ellipsis">
+<b style="text-decoration:underline;">Video description:</b>{{" "+$ctrl.vid.description}}
+</p>
+</tr>
+</table>
+
+</div>

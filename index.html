@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="videoApp">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<link rel="stylesheet" href="frontStyles.css">
+	<title>Crossover Video Portal</title>
+	
+</head>
+<body ng-controller="mainController" class="videolist">
+	<h2>Crossover Video Portal</h2>
+	<login-form></login-form>
+	<video-list id="vidList"></video-list>
+	<div ng-hide>
+<!--	<div style="background-color:grey; display:inline-block;height: 200px;width=40%" ng-view></div>
+-->	
+<script src="app.js"></script>
+<script src="mainController.js"></script>
+<script src="loginForm.js"></script>
+<script src="video.js"></script>
+<script src="videoList.js"></script>
+<script src="stars.js"></script>
+</body>
+</html>
